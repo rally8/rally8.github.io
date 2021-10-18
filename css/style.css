@@ -209,16 +209,41 @@ a {
 .main-visual {
   height: 800px;
   width: 100%;
-  background: url(../img/food2.png) no-repeat center center/cover;
+  
   position: relative;
   margin-top: 100px;
+  
+ 
 }
+
+
+.main-visual img {
+  width: 100%;
+}
+
+@media (max-width: 767px) {
+  .main-visual img {
+    height: 420px;
+  }
+}
+
+
+@media (min-width: 768px) and (max-width: 1199px) {
+  .main-visual img {
+    height: 820px;
+  }
+}
+
 
 @media (max-width: 767px) {
   .main-visual {
     margin-top: 60px;
     height: 420px;
   }
+}
+
+.swiper-pagination-bullet {
+  background: #fff;
 }
 
 .main-visual_content {
